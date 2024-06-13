@@ -20,9 +20,9 @@
 			<a href="/" class="header__logo desktop">Muallim Said</a>
 			<a href="/" class="header__logo mobile">MS.</a>
 			<ul class="header__navlist">
-				<li class="header__navlink"><a href="#">About</a></li>
+				<li class="header__navlink"><a href="#about">About</a></li>
 				<li class="header__navlink"><a href="#">Blog</a></li>
-				<li class="header__navlink"><a href="#">Courses</a></li>
+				<li class="header__navlink"><a href="#courses">Courses</a></li>
 				<li class="header__navlink"><a href="#">Books</a></li>
 			</ul>
 			<button class="header__hamburger" id="header__hamburger">
@@ -44,7 +44,7 @@
 						Neccidir yillik tajribaga ega IELTS instruktor, blah blah textlar
 						lorem ipsum dolor sit amet, hey hey all the way. Blah Blah
 					</p>
-					<button class="main__hero-btn btn base-1 content">About me</button>
+					<a href="#about" class="main__hero-btn btn base-1 content">About me</a>
 				</div>
 				<div class="main__hero-img_wrapper">
 					<img class="main__hero-img content" src="./assets/imgs/hero.png" width="700" height="800"
@@ -52,10 +52,70 @@
 				</div>
 			</div>
 		</section>
+		<section id="about" class="about__wrapper container">
+			<div class="about__content">
+				<div>
+					<h2 class="about__greeting">Assalamu Alaykum</h2>
+					<h3 class="about__name">My name is Saidahrorxon Abduqodirov</h3>
+				</div>
+				<p class="about__paragraph">
+					I am an independent software developer currently based in Singapore. I am the creator of the
+					JavaScript framework <a href="#">Vue.js</a> and the frontend build tool <a href="#">Vite</a>. Most
+					of my work is open source and
+					publicly available on GitHub.
+				</p>
+				<p class="about__paragraph">
+					You can follow me on <a href="#">X / Twitter</a> where I mostly post about Vue and frontend
+					technologies.
+				</p>
+				<p class="about__paragraph">Outside of programming and helping my wife take care of our two kids, I
+					enjoy video games (soulsborne & roguelikes are my favorite), karaoke, Japanese food, UFC/NBA/F1, and
+					collecting watches.</p>
+			</div>
+		</section>
+		<section id="courses" class="courses__wrapper">
+			<div class="courses__content container">
+				<div class="courses__header">
+					<h2>Courses</h2>
+					<p>Learn from me mate!</p>
+				</div>
+				<div class="courses__grid">
+					<div class="courses__card">
+						<img class="courses__img" src="./assets//imgs/writing.jpeg" alt="Writing course img" width="300"
+							height="400" />
+						<span class="courses__info">Something</span>
+						<p class="courses__title">Writing course</p>
+						<a href="#" class="courses__cta btn">Learn More</a>
+					</div>
+					<div class="courses__card">
+						<img class="courses__img" src="./assets//imgs/writing.jpeg" alt="Writing course img" width="300"
+							height="400" />
+						<span class="courses__info">Something</span>
+						<p class="courses__title">Writing course</p>
+						<a href="#" class="courses__cta btn">Learn More</a>
+					</div>
+					<div class="courses__card">
+						<img class="courses__img" src="./assets//imgs/writing.jpeg" alt="Writing course img" width="300"
+							height="400" />
+						<span class="courses__info">Something</span>
+						<p class="courses__title">Writing course</p>
+						<a href="#" class="courses__cta btn">Learn More</a>
+					</div>
+					<div class="courses__card">
+						<img class="courses__img" src="./assets//imgs/writing.jpeg" alt="Writing course img" width="300"
+							height="400" />
+						<span class="courses__info">Something</span>
+						<p class="courses__title">Writing course</p>
+						<a href="#" class="courses__cta btn">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<footer class="footer container">
 	</footer>
 
+	<script src="./assets//scripts/ScrollTrigger.min.js"></script>
 	<script src="./assets/scripts/gsap.min.js"></script>
 	<script src="./assets/scripts/gsap.js"></script>
 	<script src="./assets/scripts/script.js"></script>

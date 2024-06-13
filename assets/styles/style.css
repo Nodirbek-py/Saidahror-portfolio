@@ -9,10 +9,16 @@ html {
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 16px;
   color: #303030;
+  scroll-behavior: smooth;
 }
 
 body {
   background-color: #e8e8e0;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .page__overlay {
@@ -55,6 +61,10 @@ body {
   outline: none;
   transition: background-color 0.7s cubic-bezier(1, 0, 0, 1),
     color 0.7s cubic-bezier(1, 0, 0, 1);
+  color: #303030;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
 }
 
 .btn:hover {
@@ -262,4 +272,117 @@ body {
   .main__hero-subtitle {
     margin: 20px 0 45px 0;
   }
+}
+
+/* ====== About me Section ====== */
+.about__wrapper {
+  margin-top: 100px;
+  height: calc(100vh - 100px);
+}
+
+.about__content {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 2.4rem;
+}
+
+.about__greeting {
+  opacity: 0;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.about__name {
+  opacity: 0;
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.about__paragraph {
+  opacity: 0;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+/* ====== Courses Section ====== */
+.courses__wrapper {
+  height: 70vh;
+  background: #fff;
+}
+
+.courses__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.courses__header {
+  margin-bottom: 24px;
+}
+
+.courses__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 24px;
+}
+
+.courses__card {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.courses__card::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #00000010;
+  backdrop-filter: blur(4px);
+}
+
+.courses__img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+.courses__card > *:not(.courses__img) {
+  position: relative;
+  z-index: 3;
+}
+
+.courses__info {
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.courses__title {
+  color: #e8e8e0;
+  font-size: 36px;
+}
+
+.courses__cta {
+  min-width: 80px;
+  background: transparent;
+  color: #e8e8e0;
+  border-color: #e8e8e0;
 }

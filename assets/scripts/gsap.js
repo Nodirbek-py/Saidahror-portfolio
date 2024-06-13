@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger);
+
 gsap.to(".page__overlay", {
   backdropFilter: "blur(0px)",
   delay: 1,
@@ -91,3 +93,34 @@ gsap.fromTo(
     stagger: 0.2,
   },
 );
+
+gsap.to(".about__greeting", {
+  scrollTrigger: {
+    trigger: ".about__greeting",
+    toggleActions: "restart none none none",
+  },
+  opacity: 1,
+  duration: 1,
+  delay: 0.4,
+});
+
+gsap.to(".about__name", {
+  scrollTrigger: {
+    trigger: ".about__name",
+    toggleActions: "restart none none none",
+  },
+  opacity: 1,
+  duration: 1,
+  delay: 0.6,
+});
+
+gsap.to(".about__paragraph", {
+  scrollTrigger: {
+    trigger: ".about__paragraph",
+    toggleActions: "restart none none none",
+  },
+  opacity: 1,
+  duration: 1,
+  delay: 0.8,
+  stagger: 0.2,
+});
