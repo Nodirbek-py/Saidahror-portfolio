@@ -124,3 +124,42 @@ gsap.to(".about__paragraph", {
   delay: 0.8,
   stagger: 0.2,
 });
+
+gsap.to(".courses__subtitle", {
+  scrollTrigger: {
+    trigger: ".courses__subtitle",
+    toggleActions: "restart none none none",
+  },
+  opacity: 1,
+  duration: 1,
+  delay: 0.6,
+});
+
+gsap.to(".courses__title", {
+  scrollTrigger: {
+    trigger: ".courses__title",
+    toggleActions: "restart none none none",
+  },
+  opacity: 1,
+  duration: 1,
+  delay: 0.4,
+});
+
+gsap.fromTo(
+  ".courses__card",
+  {
+    opacity: 0,
+    y: 15,
+  },
+  {
+    scrollTrigger: {
+      trigger: ".courses__title",
+      toggleActions: "restart none none none",
+    },
+    opacity: 1,
+    y: 0,
+    duration: 1,
+    delay: 0.8,
+    stagger: 0.1,
+  },
+);
